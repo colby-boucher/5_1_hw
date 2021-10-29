@@ -10,6 +10,6 @@ def signup():
 def signin():
     return render_template('signin.html')
     
- @auth.route('/signout')
- def signout()
-    return render_template('signin.html')
+@auth.route('/signout')
+def signout():
+    return render_template('signout.html')

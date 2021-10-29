@@ -1,3 +1,4 @@
 .env
 05_01
 __pycache__
+migrations

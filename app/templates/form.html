@@ -1,0 +1,64 @@
+<form method = "POST">
+  {{ form.hidden_tag() }}
+  <div class="form-group">
+    <fieldset id="name">
+      {{form.name.label}}
+      {{form.name(class = "form-control", placeholder = "Abbreviated name here")}}
+    </fieldset>
+    <fieldset id="longname">
+      {{form.longname.label}}
+      {{form.longname(class = "form-control", placeholder = "Full name here")}}
+    </fieldset>
+    <fieldset id="heat">
+      {{ form.heat.label}}
+      {{form.heat(class = "form-control", placeholder = "Heat generated")}}
+    </fieldset>
+    <fieldset id="damage">
+      {{ form.damage.label}}
+      {{form.damage(class = "form-control", placeholder = "Damage dealt per projectile")}}
+    </fieldset>
+    <fieldset id="size">
+      {{form.size.label}}
+      {{form.size(class = "form-control", placeholder = "Size (Cluster weapons only)")}}
+    </fieldset>
+    <fieldset id="cluster_size">
+    {{form.cluster_size.label}}
+    {{form.cluster_size(class = "form-control", placeholder = 'Hits per cluster (Cluster weapons only)')}}
+    </fieldset>
+    <fieldset id="minimum_range">
+      {{form.minimum_range.label}}
+      {{form.minimum_range(class = "form-control", placeholder = "Minimum range")}}
+    </fieldset>
+    <fieldset id="max_short_range">
+      {{ form.max_short_range.label}}
+      {{form.max_short_range(class = "form-control", placeholder = "Max short range distance")}}
+    </fieldset>
+    <fieldset id="max_med_range">
+      {{ form.max_med_range.label}}
+      {{form.max_med_range(class = "form-control", placeholder = "Max medium range distance")}}
+    </fieldset>
+    <fieldset id="max_long_range">
+      {{ form.max_long_range.label}}
+      {{form.max_long_range(class = "form-control", placeholder = "Max long range distance")}}
+    </fieldset>
+    <fieldset id="tons">
+      {{ form.tons.label}}
+      {{form.tons(class = "form-control", placeholder = "Tonnage of the weapon")}}
+    </fieldset>
+    <fieldset id="crit_slots">
+      {{ form.crit_slots.label}}
+      {{form.crit_slots(class = "form-control", placeholder = "Abbreviated name here")}}
+    </fieldset>
+    <fieldset id="shots_per_ton">
+      {{ form.shots_per_ton.label}}
+      {{form.shots_per_ton(class = "form-control", placeholder = "Shots per ton of ammunition (for missiles mostly")}}
+    </fieldset>
+    <fieldset id="Types">
+    {{form.types.label}}
+    {{form.types(class = "form-control", placeholder = "Types associated with this weapon")}}
+    </fieldset>
+    {{ form.submit_button(class = "btn btn-primary btn-block")}}
+  </div>
+
+
+</form>
